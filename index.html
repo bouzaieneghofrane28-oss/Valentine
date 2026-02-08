@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>💜 My Valentine 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Floating hearts container -->
+<div class="hearts"></div>
+
+<!-- INTRO -->
+<section class="card" id="intro">
+  <h1>Hey you 👀</h1>
+  <p>I made this website just for you 😌💜</p>
+  <img src="assets/stickers/cute.gif" class="sticker">
+  <button onclick="goToColorGame()">Start 🎮</button>
+</section>
+
+<!-- COLOR GAME -->
+<section class="card hidden" id="colorGame">
+  <h2>Mini Game 1 🎨</h2>
+  <p>Guess my favorite color 💜</p>
+  <div class="choices">
+    <button onclick="wrong('color')">Blue 💙</button>
+    <button onclick="correct('color')">Purple 💜</button>
+    <button onclick="wrong('color')">Green 💚</button>
+  </div>
+  <img src="assets/stickers/blush.gif" class="sticker">
+</section>
+
+<!-- FOOD GAME -->
+<section class="card hidden" id="foodGame">
+  <h2>Mini Game 2 🍕</h2>
+  <p>Guess my favorite food 😋</p>
+  <div class="choices">
+    <button onclick="wrong('food')">Burger 🍔</button>
+    <button onclick="wrong('food')">Sushi 🍣</button>
+    <button onclick="correct('food')">Pizza 🍕</button>
+    <button onclick="wrong('food')">Pasta 🍝</button>
+  </div>
+  <img src="assets/stickers/blush.gif" class="sticker">
+</section>
+
+<!-- PROPOSAL -->
+<section class="card hidden" id="proposal">
+  <h1>Important Question 💘</h1>
+  <p>After all that thinking… will you be my Valentine?</p>
+  <div class="choices">
+    <button id="yesBtn" onclick="yes()">YES 😍</button>
+    <button id="noBtn" onmouseover="runAway()">NO 😈</button>
+  </div>
+  <img src="assets/stickers/angry.gif" class="sticker">
+</section>
+
+<!-- FINAL -->
+<section class="card hidden" id="final">
+  <h1>YAAAAY 💜🎉</h1>
+  <p>Congrats, you are officially my Valentine 😌💖</p>
+  <img src="assets/stickers/happy.gif" class="sticker">
+  <p>And by the way… listen to this song for me 💜🎵</p>
+  <a href="https://youtu.be/GxldQ9eX2wo?si=wbpOY8GNKq3bD6ff" target="_blank">🎶 Click here to play!</a>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

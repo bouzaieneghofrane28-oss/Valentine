@@ -1,0 +1,14 @@
+valentine-website/
+│
+├── index.html
+├── style.css
+├── script.js
+└── assets/
+    ├── bg/
+    │   └── anime-bg.jpg
+    ├── stickers/
+    │   ├── cute.gif
+    │   ├── happy.gif
+    │   └── angry.gif
+    └── music/
+        └── love.mp3   (optional)
